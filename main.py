@@ -19,10 +19,6 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-""" 
-or CORS(app, resources={r'/*':{'origins':'http://localhost:8080', "allow_headers":"Access-Control-Allow-Origin"}})
- """
-
 model_dir = 'models'
 model_random_forest_filename = 'random_forest_model.pkl'
 model_random_forest_path = os.path.join(model_dir, model_random_forest_filename)
@@ -85,8 +81,8 @@ def predict_with_random_forest(features):
 
     return y_predict_with_random_forest_with_hyperparameters
 
-if __name__ == "__main__":
-    app.run(debug=True)
+""" if __name__ == "__main__":
+    app.run(debug=True) """
 
 """ Flask == 2.2.5
 Flask-Cors == 3.0.10
