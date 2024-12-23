@@ -80,10 +80,3 @@ def predict_with_random_forest(features):
     y_predict_with_random_forest_with_hyperparameters = best_model.predict(features)
 
     return y_predict_with_random_forest_with_hyperparameters
-
-""" if __name__ == "__main__":
-    app.run(debug=True) """
-
-""" Flask == 2.2.5
-Flask-Cors == 3.0.10
- """
